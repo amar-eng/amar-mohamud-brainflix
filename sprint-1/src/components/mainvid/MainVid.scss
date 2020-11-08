@@ -4,8 +4,8 @@ video{
     
 }
 .main-vid{ 
-    // background-color: black;
-    // display: flex;
+    background-color: black;
+    display: flex;
     
     justify-content: center;
 }
@@ -15,9 +15,6 @@ video{
 
 }
 .vid-controls__play{
-    background-color: black;
-    z-index: 10;
-}
-.vid{
-    z-index:-1
+    // background-color: black;
+    // z-index: 10;
 }

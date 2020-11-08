@@ -1,0 +1,40 @@
+.vid-controls{
+    display: flex;
+    justify-content: space-evenly;
+    // background-color: silver;
+    position: relative;
+    bottom: 4rem;
+    
+    // position: relative;
+    // right: 53rem;
+    // top: 25rem;
+    // &__play{
+    //     // background-color: grey;
+    //     // padding: 0.3rem 0.8rem;
+    // }
+    // .vid-controls__scrubber-container{
+    //     width: 900%;
+    //     background-color: grey;
+    //     margin: 3rem 0;
+    //     display: flex;
+    //     flex-direction: row-reverse;
+
+    // }
+    // .vid-conrols__play-image{
+    //     padding: 1rem 0;
+    //     background-color: grey;
+    // }
+
+    .vid-controls__container{
+        background-color: silver;
+        // padding: 0 1rem ;
+        display: flex;
+        justify-content: space-around;
+    }
+    .vid-conrols__fullsize{
+        margin: 0.2rem .5rem;
+    }
+    .vid-conrols__volume{
+        margin: 0.2rem .5rem;
+    }
+}

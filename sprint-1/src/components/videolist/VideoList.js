@@ -2,11 +2,9 @@ import React from 'react';
 import Video from './Video';
 import './VideoList.scss';
 
-
-
 function VideoList (props) {
     const videoList= [
-         { 
+        { 
             id: 101, 
             title: 'BMX Rampage: 2018 Highlights ', 
             channel: 'Red Cow', 
