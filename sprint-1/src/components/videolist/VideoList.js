@@ -4,13 +4,13 @@ import './VideoList.scss';
 
 
 
-function VideoList(props) {
+function VideoList (props) {
     const videoList= [
-        { 
+         { 
             id: 101, 
             title: 'BMX Rampage: 2018 Highlights ', 
             channel: 'Red Cow', 
-            image: require ('./node_modules') 
+            image: 'type of <string>' 
         
         }, 
     
@@ -74,11 +74,15 @@ function VideoList(props) {
     
     
     ] 
+
+    const {item,...rest} = videoList
+    console.log(item,rest);
     return (
         <div>
          {
              videoList.map((items)=>(
                  <Video title= {items.title} channel = {items.channel} />
+            
              ))
          }  
         </div>

@@ -1,0 +1,23 @@
+video{ 
+    width: 900px;
+    
+    
+}
+.main-vid{ 
+    // background-color: black;
+    // display: flex;
+    
+    justify-content: center;
+}
+
+.vid-controls__image { 
+    // width: 500px;
+
+}
+.vid-controls__play{
+    background-color: black;
+    z-index: 10;
+}
+.vid{
+    z-index:-1
+}
