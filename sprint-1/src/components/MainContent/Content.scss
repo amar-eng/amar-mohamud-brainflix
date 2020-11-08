@@ -1,0 +1,31 @@
+.Content{ 
+    &__title{ 
+        margin: 1rem;
+    }
+    .Content__items{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .Content__items-left{ 
+        display: flex;   
+    }
+    .Content__items-right{ 
+        display: flex; 
+        padding: 0 1rem ; 
+
+        .Content__views-icon{
+            padding: 0 1rem ; 
+        }
+        .Content__views{
+            padding: 0 1rem ; 
+        }
+        .Content__likes-icon{
+            padding: 0 1rem ; 
+        }
+        .Content__likes{
+            padding: 0 1rem ; 
+        }
+    }
+    
+}

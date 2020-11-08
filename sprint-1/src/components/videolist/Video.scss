@@ -1,0 +1,15 @@
+.Video-list{
+    display: flex;
+    // justify-content: space-between;
+    margin: 1rem;
+
+    img{
+        width:10%;
+        height: 5rem;
+        border-radius: 5%;
+    }
+
+    .Video-list__container{
+        margin-left: 1rem;
+    }
+}

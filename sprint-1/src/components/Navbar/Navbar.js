@@ -10,7 +10,7 @@ function Navbar(props) {
             <div className ="navbar__logo"><img src ={Logo} /></div>
             <div className = "navbar__content">
                 <label>
-                    <img src = {Search}/>
+                    {/* <img src = {Search}/> */}
                     <input type ="text" placeholder ="Search"  />
                 </label>
             

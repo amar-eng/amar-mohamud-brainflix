@@ -1,3 +1,5 @@
+
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -8,16 +10,23 @@
         flex-wrap: wrap;
         margin-left: 20rem;
         
-         label{
-             border: 1px solid black;
-             padding:  0.9rem 0.5rem;
-             margin: 1rem;
-             // display: flex;
-             // width: 20%;
-         }
+        //  label{
+        //      border: 1px solid black;
+        //      padding:  0.9rem 0.5rem;
+        //      margin: 1rem;
+        //      // display: flex;
+        //      // width: 20%;
+        //  }
          input{ 
-             border: none;
+            //  border: none;
+             background-image: url('../../assets/Icons/SVG/Icon-search.svg');
+             background-repeat: no-repeat;
+             border: 1px solid black;
+             padding:  0.2rem 0.5rem;
+             margin: 1rem;
+             
          }
+         input::placeholder{padding-left: 1rem;} 
          .navbar__pic{
              width: 7%;
              height:2rem;
