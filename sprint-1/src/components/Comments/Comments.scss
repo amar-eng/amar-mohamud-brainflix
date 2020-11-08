@@ -1,0 +1,15 @@
+.comment{
+    .comments{
+        &__profile{
+            display:flex;
+            justify-content: space-around;
+            
+        }
+        &__icon{
+            background-color: brown;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+    }
+}

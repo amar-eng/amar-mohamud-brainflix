@@ -1,6 +1,7 @@
 import './App.scss';
 import Navbar from './components/Navbar/Navbar';
 import Comments from './components/Comments/Comments';
+import VideoList from './components/videolist/VideoList';
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Comments />
+      <VideoList />
     </div>
   );
 }
