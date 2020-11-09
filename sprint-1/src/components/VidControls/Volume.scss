@@ -1,6 +1,7 @@
+@import '../../partials/variables';
 .vid-controls-rhs {
-    background-color: salmon;
-    opacity: .9;
+    background-color: $black;
+    opacity: 80%;
     display: flex;
     justify-content: center;
     justify-content: space-evenly;

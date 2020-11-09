@@ -1,14 +1,94 @@
 @font-face{
     font-family: 'Av-bold';
-    src: url('../Assets/fonts/fonts/AvenirNextLTPro-Bold.otf') ;
+    src: url('../assets/fonts/fonts/AvenirNextLTPro-Bold.otf') ;
 }
 
 @font-face{
     font-family: 'Av-demi';
-    src: url('../Assets/fonts/fonts/AvenirNextLTPro-Demi.otf');
+    src: url('../assets/fonts/fonts/AvenirNextLTPro-Demi.otf');
 }
 
 @font-face{
     font-family: 'Av-regular';
-    src: url('../Assets/fonts/fonts/AvenirNextLTPro-Regular.otf') ;
+    src: url('../assets/fonts/fonts/AvenirNextLTPro-Regular.otf') ;
+}
+
+@mixin bold-font {
+    font-family: 'Av-bold';
+    font-weight: 900;    
+}
+
+@mixin demi-font {
+    font-family: 'Av-demi';
+    font-weight: 700;    
+}
+@mixin reg-font {
+    font-family: 'Av-regular';
+    font-weight: lighter;    
+}
+
+@mixin h1 {
+    font-size: 24px;
+    line-height: 38px;
+    @include bold-font; 
+
+    @media(min-width: $tablet){
+        font-size: 36px;
+        line-height: 44px;
+     }
+     @media(min-width: $desktop){
+        font-size: 36px;
+        line-height: 68px;
+     }
+}
+
+@mixin h2 {
+    font-size: 16px;
+    line-height: 22px;
+    @include demi-font;
+
+    @media(min-width: $tablet){
+        font-size: 24px;
+        line-height: 32px;
+        @include bold-font
+    }
+     @media(min-width: $desktop){
+        font-size: 22px;
+        line-height: 32px;
+        @include bold-font; 
+    }  
+}
+
+@mixin h3 {
+    font-size: 14px;
+    line-height: 18px;
+    @include demi-font;
+
+
+    @media(min-width: $tablet){
+        font-size: 16px;
+        line-height: 24px;
+     }
+     @media(min-width: $desktop){
+        font-size: 16px;
+        line-height: 24px;
+     }
+   
+}
+
+@mixin h4 {
+    font-size: 12px;
+    line-height: 18px;
+    
+    @include reg-font; 
+
+    @media(min-width: $tablet){
+        font-size: 14px;
+        line-height: 22px;
+        }   
+     
+     @media(min-width: $desktop){
+        font-size: 14px;
+        line-height: 22px;
+        }   
 }

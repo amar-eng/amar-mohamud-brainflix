@@ -1,6 +1,7 @@
+@import '../../partials/variables';
 .play-image-container{
-    background-color:brown;
-    opacity: .8;
+    background-color:$black;
+    opacity: 80%;
     display: flex;
     justify-content: center;
     height: 35px;

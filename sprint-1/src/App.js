@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <MainVid />
-      <section className ="app-section">
+      <MainVid />
+      {/* <section className ="app-section">
         <MainContent />
         <VideoList />
       </section> */}
