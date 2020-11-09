@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Video.scss";
+
 function Video(props) {
     return (
         <div className = "Video-list">

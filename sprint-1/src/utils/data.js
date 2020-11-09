@@ -1,11 +1,13 @@
-// Side Video Object 
 
+
+
+// Side Video Object 
 export const sideVideos= [
     { 
         id: 101, 
         title: 'BMX Rampage: 2018 Highlights ', 
         channel: 'Red Cow', 
-        image: '' 
+        image: require ('../components/Videolist/node_modules') 
     
     }, 
 
@@ -18,50 +20,50 @@ export const sideVideos= [
     }, 
     { 
         id: 103, 
-        title: 'type of <string>', 
-        channel: 'type of <string>', 
+        title: 'Les Houches The Hidden Gem Of The Chamonix', 
+        channel: 'Cornelia Blair', 
         image: 'type of <string>' 
     
     }, 
     { 
         id: 104, 
-        title: 'type of <string>', 
-        channel: 'type of <string>', 
+        title: 'Travel Health Useful Medical Information For', 
+        channel: 'Glen Harper', 
         image: 'type of <string>' 
     
     }, 
     { 
         id: 105, 
-        title: 'type of <string>', 
-        channel: 'type of <string>', 
+        title: 'Cheap Airline Tickets Great Ways To Save', 
+        channel: 'Emily Harper', 
         image: 'type of <string>' 
     
     }, 
     { 
         id: 106, 
-        title: 'type of <string>', 
-        channel: 'type of <string>', 
+        title: 'Take A Romantic Break In A Boutique Hotel', 
+        channel: 'Ethan Owen', 
         image: 'type of <string>' 
     
     }, 
     { 
         id: 107, 
-        title: 'type of <string>', 
-        channel: 'type of <string>', 
+        title: 'Choose The Perfect Accommodations', 
+        channel: 'Lydia Perez', 
         image: 'type of <string>' 
     
     }, 
     { 
         id: 108, 
-        title: 'type of <string>', 
-        channel: 'type of <string>', 
+        title: 'Cruising Destination Ideas', 
+        channel: 'Timothy Austin', 
         image: 'type of <string>' 
     
     }, 
     { 
         id: 109, 
-        title: 'type of <string>', 
-        channel: 'type of <string>', 
+        title: 'Train Travel On Track For Safety', 
+        channel: 'Scotty Cranmer', 
         image: 'type of <string>' 
     
     }, 
