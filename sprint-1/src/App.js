@@ -8,11 +8,11 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <MainVid />
+      {/* <MainVid />
       <section className ="app-section">
         <MainContent />
         <VideoList />
-      </section>
+      </section> */}
       
       
     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import ContentStuff from './ContentStuff'; 
 import Comments from '../../components/Comments/Comments';
+import Convo from '../../components/Convo/Convo';
 import ActualVid from '../../assets/Video/BrainStation Sample Video.mp4'
 
 function MainContent(props) {
@@ -39,14 +40,16 @@ function MainContent(props) {
                 
             }
     
-            ] 
+        ] 
     };
 
 
     return (
         <div>
-         <ContentStuff title= {mainVideoData.title} channel = {mainVideoData.channel} desc= {mainVideoData.description} likes = {mainVideoData.likes} views = {mainVideoData.views} date = {mainVideoData.timestamp} />
-         <Comments />
+            
+            <ContentStuff title= {mainVideoData.title} channel = {mainVideoData.channel} desc= {mainVideoData.description} likes = {mainVideoData.likes} views = {mainVideoData.views} date = {mainVideoData.timestamp} />
+            <Convo />
+            <Comments />
         </div>
     );
 }

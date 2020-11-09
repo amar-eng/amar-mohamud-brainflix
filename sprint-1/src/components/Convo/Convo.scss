@@ -1,0 +1,73 @@
+.profile{ 
+    &__text{ 
+        @include side-margin; 
+        @include h1-mobile; 
+        @include headerSpex;
+    }
+
+    &__person{ 
+        @include commentsMargin;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid $mercury;
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .profile__form{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+            label{
+                @include h3-mobile;
+                color: $silver;
+            }
+
+            input{ 
+                resize: none;
+                outline: none;
+                @include inputSpex;
+                border: 2px solid $silver;
+                border-radius: 5px;
+                background-color: $offwhite;
+                padding-left:.5rem;
+                @include h3-mobile;
+            }
+            input::placeholder{ 
+                color: black; 
+                @include h5-mobile; 
+                padding-left: .5rem;
+            }
+
+            textarea{
+                resize: none;
+                outline: none;
+                border: 2px solid $silver;
+                border-radius: 5px;
+                background-color: $offwhite;
+                @include textareaSpex;
+                padding-left:.5rem;
+                @include h4-mobile
+               
+            }
+            textarea::placeholder{
+                color: black; 
+                @include h4-mobile; 
+                padding-left: .5rem;
+            }
+        }
+
+
+        button{
+            border: 2px solid $black;
+            border-radius: 5px;
+            background-color: $black;
+            color: $offwhite;
+            @include buttonSpex; 
+            align-self: flex-end;
+        }
+
+
+    }

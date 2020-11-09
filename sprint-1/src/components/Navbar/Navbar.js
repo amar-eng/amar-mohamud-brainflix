@@ -2,19 +2,19 @@ import React from 'react';
 import './Navbar.scss';
 import Logo from '../../assets/Logo/Logo-brainflix.svg';
 import Pic from "../../assets/Images/Mohan-muruge.jpg";
-import Plus from "../../assets/Icons/PNG/Icon-upload.png";
 function Navbar(props) {
     return (
         <div className ="navbar">
-            <div className ="navbar__logo"><img src ={Logo} /></div>
+            <img src ={Logo} className ="navbar__logo"/>
             <div className = "navbar__content">
                 <label>
-                    
                     <input type ="text" placeholder ="Search"  />
                 </label>
-            
-                <button><img src = {Plus}/>UPLOAD</button>
-                <img className ="navbar__pic"src = {Pic}/>
+                <div className = "navbar__bottom">
+                    <button >UPLOAD</button>
+                    <img className ="navbar__pic"src = {Pic}/>
+                </div>
+                
             </div>
             
             
