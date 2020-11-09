@@ -48,14 +48,14 @@
     @include demi-font;
 
     @media(min-width: $tablet){
-        font-size: 24px;
+        font-size: 20px;
         line-height: 32px;
-        @include bold-font
+        
     }
      @media(min-width: $desktop){
         font-size: 22px;
         line-height: 32px;
-        @include bold-font; 
+         
     }  
 }
 

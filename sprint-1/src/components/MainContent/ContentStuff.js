@@ -20,9 +20,10 @@ function ContentStuff(props) {
                     
                         <img src = {Likes} className = "Content__likes-icon"/>
                         <h3 className ="Content__likes"> {props.likes}</h3>
-                    
+                        
                 </div>
             </div>
+            <hr />
             
               
             

@@ -9,10 +9,10 @@ function App() {
     <div className="App">
       <Navbar />
       <MainVid />
-      {/* <section className ="app-section">
+      <section className ="app-section">
         <MainContent />
-        <VideoList />
-      </section> */}
+        {/* <VideoList /> */}
+      </section>
       
       
     </div>

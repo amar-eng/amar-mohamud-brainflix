@@ -42,8 +42,8 @@ class Comments extends Component {
                     <div className = "comments">
                         <div className = "comments__profile">
                             <div className = "comments__icon"></div>
-                             <h3>{item.name}</h3>
-                             <h3>{item.date}</h3>
+                             <h3 className= "comments__name">{item.name}</h3>
+                             <h3 className= "comments__date">{item.date}</h3>
                         </div>
                         <div className = "comments__text">
                             <h3>{item.text}</h3>
