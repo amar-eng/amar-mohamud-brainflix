@@ -11,7 +11,7 @@ function App() {
       <MainVid />
       <section className ="app-section">
         <MainContent />
-        {/* <VideoList /> */}
+        <VideoList />
       </section>
       
       

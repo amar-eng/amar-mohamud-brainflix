@@ -49,6 +49,7 @@ class Comments extends Component {
                             <h3>{item.text}</h3>
                             
                         </div>
+                        <hr/>
                     </div>
                 
                 )

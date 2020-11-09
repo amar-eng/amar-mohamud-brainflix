@@ -6,7 +6,7 @@ function Video(props) {
         <div className = "Video-list">
             <img src= {props.pic} />
             <div className = "Video-list__container">
-            <h4>{props.title}</h4> 
+            <h3>{props.title}</h3> 
             <h4 >{props.channel}</h4>
             </div>
             

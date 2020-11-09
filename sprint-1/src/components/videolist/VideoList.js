@@ -91,6 +91,7 @@ function VideoList (props) {
    
     return (
         <div>
+            <h1>NEXT VIDEO</h1>
          {
              newList.map((items)=>(
                  <Video title= {items.title} channel = {items.channel} pic= {items.image}/>
