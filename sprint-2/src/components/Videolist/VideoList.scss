@@ -1,7 +1,0 @@
-@import '../../partials/variables';
-@import '../../partials/typography';
-h1{ 
-    color:$silver;
-    @include h2;
-    margin: 1rem; 
-}

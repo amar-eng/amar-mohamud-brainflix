@@ -1,21 +1,23 @@
 import './App.scss';
-import Navbar from './components/Navbar/Navbar';
-import VideoList from './components/Videolist/VideoList';
-import MainVid from './components/mainvid/MainVid';
-import MainContent from './components/MainContent/MainContent';
+// import Navbar from './components/Navbar/Navbar';
+// import VideoList from './components/Videolist/VideoList';
+// import MainVid from './components/mainvid/MainVid';
+// import MainContent from './components/MainContent/MainContent';
+import {BrowserRouter, Switch, Route} from 'react-router-dom'; 
+import Home from './pages/Home';
+import Upload from './pages/Upload';
+
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <MainVid />
-      <section className ="app-section">
-        <MainContent />
-        <VideoList />
-      </section>
-      
-      
-    </div>
+   <BrowserRouter>
+      {/* <Navbar/> */}
+      <Switch>
+        <Route path = "/" exact component = {Home} />
+        <Route path = "/upload"  component = {Upload} />
+
+      </Switch>
+   </BrowserRouter>
   );
 }
 
