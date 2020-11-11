@@ -1,0 +1,15 @@
+@import '../../partials/variables';
+@import '../../partials/typography';
+
+.side-vids{
+    display: flex;
+    margin: 1rem;
+    &__image{
+        max-width: 100px;
+        border-radius: 5px;
+    }
+    &__content{ 
+        @include h3; 
+        margin-left: 1rem;
+    }
+}
