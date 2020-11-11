@@ -1,0 +1,25 @@
+@import '../../partials/variables';
+@import '../../partials/typography';
+.Video-list{
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+
+    img{
+        width:120px;
+        height: 70px;
+        border-radius: 5%;
+    }
+
+    .Video-list__container{
+        margin-left: 1rem;
+        h3{ 
+           @include h3;
+           color: $black; 
+        }
+        h4{
+            @include h4; 
+            color: $black;
+        }
+    }
+}
