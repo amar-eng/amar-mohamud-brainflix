@@ -46,11 +46,38 @@ import './Home.scss'
         
     }
 
-    // componentDidUpdate(prevprops){ 
-    //     let curr
+    componentDidUpdate(prevprops){ 
+        let currId  = this.props.match.params.id
+         if (prevprops.match.params.id !== currId){ 
+            axios.get(API_URL+'/videos/'+API_Key)
+            .then((videoListitems)=> {
+                console.log (videoListitems.id)
+                const filteredList = videoListitems.data.filter (video => {
+                    return video.id !== currId})
+                this.setState({
+                    videoListitems : filteredList
+                })
+                     
+                return videoListitems; 
+            })
+
+            .then(VidId =>{
+                if (prevprops.match.params.id !== currId){
+                    axios.get(`${API_URL}/videos/${currId}${API_Key}`)
+                    .then (currentVideo =>{
+                        console.log(currentVideo.data)
+                        this.setState({
+                            mainContent: currentVideo.data
+                        })
+                    })
+                }
+                
             
+
+            })  
+         }  
        
-    // }
+    }
 
    
     render(){

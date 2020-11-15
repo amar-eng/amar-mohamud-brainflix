@@ -10,7 +10,7 @@ function ContentStuff(props) {
             <div className= "Content__items">
                 <div className = "Content__items-left">
                     <h2 className ="Content__channel"> By {props.channel}</h2>
-                    <h4 className ="Content__date"> {props.date}</h4>
+                    <h4 className ="Content__date"> {new Date(props.date).toLocaleDateString()}</h4>
                 </div>
                 <div className = "Content__items-right">
                     
