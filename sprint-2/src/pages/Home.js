@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom'; 
 import {API_URL, API_Key} from '../utils/Data';
 import axios from "axios";
-// import Main from '../Components/main/Main'
+import Main from '../Components/main/Main'
 import './Home.scss'
 
 
@@ -60,7 +60,7 @@ import './Home.scss'
            
             <div className = "home-content">
                
-                {/* <Main mainstuff= {this.state.mainContent}  videoList= {this.state.videoListitems}/> */}
+                <Main mainstuff= {this.state.mainContent}  videoList= {this.state.videoListitems}/>
             </div>
         );
     }

@@ -1,0 +1,35 @@
+@import '../../partials/variables';
+
+@mixin sidespex{ 
+    margin: 0 1rem;
+    @media (min-width:$tablet) {
+        margin: 0 1.5rem ;
+    }
+    @media (min-width:$desktop) {
+        margin: 0 11.25rem; 
+    }
+}
+.vid{ 
+    width: 100%;
+    height: 11.4375rem;
+    @media (min-width:$tablet) {
+        width: 700px;
+        height: 400px;
+    }
+    @media (min-width:$desktop) {
+        width: 944px;
+        height: 540px;
+    }
+    
+}
+.main-vid{ 
+    width: 100%;
+    height: auto;
+    margin: 1.5rem 0rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    
+}
+
+

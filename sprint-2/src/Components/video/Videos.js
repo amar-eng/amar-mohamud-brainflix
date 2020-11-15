@@ -67,3 +67,16 @@
 // }
 
 // export default Videos;
+
+
+import React from 'react';
+
+function Videos(props) {
+    return (
+        <div>
+            <img src = {props.thumb} />
+        </div>
+    );
+}
+
+export default Videos;

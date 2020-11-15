@@ -65,11 +65,15 @@
 
 
 import React from 'react';
-
+import MainVid from '../mainvid/MainVid'; 
+import VideoDetails from '../video/VideoDetails'; 
+// import VideoList from '../videolist/VideoList'
 function Main(props) {
     return (
         <div>
-            <h1>{props.mainstuff.title}</h1>
+            <MainVid duration= {props.mainstuff.duration} thumb = {props.mainstuff.image} />
+            <VideoDetails detailsdata = {props.mainstuff} />
+            {/* <VideoList listdata = {this.props.VideoList} /> */}
             
         </div>
     );
