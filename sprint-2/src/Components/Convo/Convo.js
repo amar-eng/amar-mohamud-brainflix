@@ -10,7 +10,7 @@ function Convo(props) {
                 <img src={Image} className="profile__pic" alt="" /> 
                 <form id="commentForm" className="profile__form">
                     
-                    <label htmlfor="text"><textarea name="text" id="textArea"></textarea></label>
+                    <label><textarea name="text" id="textArea"></textarea></label>
                     <button id="submitbtn" type="submit"> COMMENT</button>
                
                 </form> 

@@ -1,15 +1,33 @@
 @import '../../partials/variables';
 @import '../../partials/typography';
 
-.side-vids{
+.side-vids__header{
+    color:$silver;
+    @include h2;
+    margin: 1rem; 
+}
+.side-vids__container{
     display: flex;
     margin: 1rem;
-    &__image{
-        max-width: 100px;
+    align-items: center;
+    .side-vids__image{
+        width: 120px;
+        height: 70px;
         border-radius: 5px;
     }
-    &__content{ 
-        @include h3; 
+    .side-vids__content{  
         margin-left: 1rem;
+        h3{ 
+            @include h3;
+            color: $black; 
+         }
+         h4{
+             @include h4; 
+             color: $black;
+         }
     }
+}
+
+.side-vids__link{ 
+    text-decoration: none;
 }

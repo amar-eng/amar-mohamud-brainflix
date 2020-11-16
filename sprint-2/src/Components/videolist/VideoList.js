@@ -6,16 +6,18 @@ function VideoList(props) {
     console.log (props)
     return (
         <div>
+            <h1 className= "side-vids__header">NEXT VIDEO</h1>
             {
-                props.listdata.map((item)=>{
+                
+                props.listdata && props.listdata.map((item)=>{
                     return(
-                       <Link to = {`/videos/${item.id}`} key = {item.id}>
+                       <Link to = {`/videos/${item.id}`} key = {item.id} className = "side-vids__link">
                        
-                        <div className = "side-vids">
+                        <div className = "side-vids__container">
                             <img src = {item.image} alt= {item.title} className ="side-vids__image" />
                             <div className = "side-vids__content">
-                                <p>{item.title}</p>
-                                <p>{item.channel}</p>
+                                <h3>{item.title}</h3>
+                                <h4>{item.channel}</h4>
                             </div>
                         </div>
                         </Link>

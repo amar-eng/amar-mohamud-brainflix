@@ -8,16 +8,15 @@ function Comments(props) {
             props.detailsdata.comments && props.detailsdata.comments.map((item)=>{
                
                 return (
-                    <div className = "comments">
-                        <div className = "comments__profile">
+                    <div className = "comments" key = {item.id}>
+                        <div className = "comments__profile"  >
                             <div className = "comments__icon"></div>
                                 <h3 className= "comments__name">{item.name}</h3>
                                 <h3 className= "comments__date">{new Date(item.timestamp).toLocaleDateString()}</h3>
                         </div>
-                        <div className = "comments__text">
-                            <h3>{item.comment}</h3>
-                            
-                        </div>
+                        
+                        <h3 className = "comments__text">{item.comment}</h3> 
+                        
                         <hr/>
                     </div>
                 

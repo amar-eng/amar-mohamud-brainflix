@@ -28,7 +28,7 @@
         }
         &__text{ 
             color: $black; 
-            @include h4; 
+            @include h3-comments; 
             margin-left: 2.2rem;
         }
     }

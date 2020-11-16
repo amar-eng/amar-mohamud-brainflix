@@ -61,7 +61,7 @@ import './Home.scss'
                 return videoListitems; 
             })
 
-            .then(VidId =>{
+            .then(() =>{
                 if (prevprops.match.params.id !== currId){
                     axios.get(`${API_URL}/videos/${currId}${API_Key}`)
                     .then (currentVideo =>{
