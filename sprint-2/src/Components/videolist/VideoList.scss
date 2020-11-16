@@ -16,7 +16,7 @@
         border-radius: 5px;
     }
     .side-vids__content{  
-        margin-left: 1rem;
+        // margin-left: 1rem;
         h3{ 
             @include h3;
             color: $black; 
@@ -24,10 +24,15 @@
          h4{
              @include h4; 
              color: $black;
+             margin-left: 1rem;
          }
     }
 }
 
-.side-vids__link{ 
+.side-vids__links{ 
     text-decoration: none;
+}
+.side-vids{
+    display: flex;
+    flex-direction: column;
 }
