@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-// import { Link } from 'react-router-dom'; 
+import React, { Component } from 'react'; 
 import {API_URL, API_Key} from '../utils/Data';
 import axios from "axios";
 import Main from '../Components/main/Main'
@@ -8,7 +7,7 @@ import './Home.scss'
 
 
     class Home extends Component {
-  // Change state
+
         state ={
              mainContent:[],   
              videoListitems:[],
@@ -16,7 +15,7 @@ import './Home.scss'
         }
 
     componentDidMount(){
-    // axios request goes here
+  
     
         axios.get(API_URL+'/videos/'+API_Key)
             .then((videoListitems)=>{

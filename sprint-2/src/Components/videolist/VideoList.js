@@ -5,13 +5,13 @@ import './VideoList.scss'
 function VideoList(props) {
     console.log (props)
     return (
-        <div>
+        <div className = "side-vids">
             <h1 className= "side-vids__header">NEXT VIDEO</h1>
             {
                 
                 props.listdata && props.listdata.map((item)=>{
                     return(
-                       <Link to = {`/videos/${item.id}`} key = {item.id} className = "side-vids__link">
+                       <Link to = {`/videos/${item.id}`} key = {item.id} className = "side-vids__links">
                        
                         <div className = "side-vids__container">
                             <img src = {item.image} alt= {item.title} className ="side-vids__image" />
