@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 function Navbar(props) {
     return (
         <div className ="navbar">
-            <Link to = {`/videos/1af0jruup5gu`}>
+            <Link to = {`/`}>
                 <img src ={Logo} className ="navbar__logo" alt = 'Brainflix-Logo'/>
             </Link>
             <div className = "navbar__content">

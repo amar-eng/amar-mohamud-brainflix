@@ -1,9 +1,9 @@
 import React from 'react';
-
-function button(props) {
+import './button.scss'
+function Button(props) {
     return (
-        <button></button>
+    <button id="submitbtn" type="submit">{}</button>
     );
 }
 
-export default button;
+export default Button;

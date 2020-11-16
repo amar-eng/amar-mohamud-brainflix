@@ -1,0 +1,11 @@
+@import '../../partials/variables';
+@import '../../partials/typography';
+
+button{
+    border: 2px solid $brainflix-blue;
+    border-radius: 5px;
+    background-color: $brainflix-blue;
+    color: $offwhite;
+    padding: 1rem 4rem;
+    // align-self: flex-end;
+}
