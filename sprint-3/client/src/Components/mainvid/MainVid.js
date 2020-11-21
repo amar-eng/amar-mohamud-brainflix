@@ -5,6 +5,7 @@ import VidControls from '../VidControls/VidControls';
 
 import './MainVid.scss'
 function MainVid(props) {
+    console.log('mainvid', props.duration)
     return (
         <>
         <div className= "main-vid">
