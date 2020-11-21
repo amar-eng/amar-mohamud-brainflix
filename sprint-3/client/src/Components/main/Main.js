@@ -6,8 +6,8 @@ function Main(props) {
     
     return (
         <div>
-            <MainVid duration= {props.mainstuff.duration} thumb = {props.mainstuff.image} />
-            <VideoDetails detailsdata = {props.mainstuff} />
+            {/* <MainVid duration= {props.mainstuff.duration} thumb = {props.mainstuff.image} />
+            <VideoDetails detailsdata = {props.mainstuff} /> */}
             <VideoList listdata = {props.videoList} />
             
         </div>
