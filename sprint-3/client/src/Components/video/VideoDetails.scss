@@ -1,0 +1,7 @@
+@import '../../partials/variables';
+@import '../../partials/typography';
+h3{
+    @include h2;
+    color: $black; 
+    margin-left: 1rem;
+}

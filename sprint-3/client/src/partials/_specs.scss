@@ -1,0 +1,10 @@
+
+@mixin sidespex{ 
+    margin: 0 1rem;
+    @media (min-width:$tablet) {
+        margin: 0 1.5rem ;
+    }
+    @media (min-width:$desktop) {
+        margin: 0 11.25rem; 
+    }
+}
