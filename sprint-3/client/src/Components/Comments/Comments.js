@@ -9,15 +9,18 @@ function Comments(props) {
                
                 return (
                     <div className = "comments" key = {item.id}>
-                        <div className = "comments__profile"  >
-                            <div className = "comments__icon"></div>
-                                <h3 className= "comments__name">{item.name}</h3>
-                                <h3 className= "comments__date">{new Date(item.timestamp).toLocaleDateString()}</h3>
+                        <div className = "comments__icon"></div>
+                        <div className = "comments__content">
+                            <div className = "comments__profile"  >
+                                    <h3 className= "comments__name">{item.name}</h3>
+                                    <h3 className= "comments__date">{new Date(item.timestamp).toLocaleDateString()}</h3>
+                            </div>
+                            <h3 className = "comments__text">{item.comment}</h3> 
+                            
                         </div>
+                       
                         
-                        <h3 className = "comments__text">{item.comment}</h3> 
                         
-                        <hr/>
                     </div>
                 
                 )

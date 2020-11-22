@@ -4,21 +4,17 @@ import './CommentInput.scss';
 
 function CommentInput(props) {
     return (
-        
-            
+        <>
+            <p className="profile-heading">JOIN THE CONVERSATION</p>
             <article className="profile">
-                <img src={Image} className="profile__pic" alt="" /> 
-
+            <img src={Image} className="profile__pic" alt="" /> 
                 <form id="commentForm" className="profile__form">
-                    
-                        {/* JOIN THE CONVERSATION */}
-                        <textarea name="text" id="textArea" className = "profile__textarea"></textarea>
-                    
+                    <textarea name="text" id="textArea" className = "profile__textarea"></textarea>
                     <button id="submitbtn" > COMMENT</button>
                 </form> 
          
             </article>
-
+        </>
         
     );
 }

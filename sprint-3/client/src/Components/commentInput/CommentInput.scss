@@ -8,7 +8,8 @@
     @include sidespex; 
     display: flex;
     align-items: flex-start;
-    
+    border-bottom: 2px solid $mercury;
+    padding-bottom: 1.5rem;
 
     &__form{
         @include h3;
@@ -28,12 +29,14 @@
         border-radius: 5px;
         background-color: $offwhite;
         padding: 0.5rem 0.5rem;
-        height: 28vh;
+        height: 30vh;
         width: 100%;
+        margin-bottom: 1rem;
         @include h4;
         @media (min-width:$tablet) {
             height: 12vh;
             width: 520px;
+            margin-bottom: 0; 
         }
     }
     &__textarea:active, &__textarea:hover{
@@ -66,5 +69,15 @@
             width: 2.5rem;
             height: 2.5rem;
         }
+    }
+}
+.profile-heading{
+    @include sidespex; 
+    @include h4-header; 
+    color: $silver;
+    padding-left: 5rem;
+    padding-bottom: 0.5rem;
+    @media (min-width:$tablet) {
+        padding-left: 4.5rem;
     }
 }

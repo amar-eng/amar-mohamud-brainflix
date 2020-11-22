@@ -1,35 +1,94 @@
 @import '../../partials/variables';
 @import '../../partials/typography';
+@import '../../partials/specs';
 
-.comment{
-    .comments{
-        margin: 0 1rem;
-        &__profile{
-            display:flex;
-            align-items: center;
-            justify-content: space-between;
+// .comment{
+//     .comments{
+//         margin: 0 1rem;
+//         &__profile{
+//             display:flex;
+//             align-items: center;
+//             justify-content: space-between;
             
-        }
-        &__icon{
-            background-color: $silver;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-        }
-        &__name{ 
-            color: $black; 
-            @include h3; 
-            // margin-right: 6rem;;
-        }
-        &__date{ 
-            color: $silver; 
-            @include h3; 
+//         }
+//         &__icon{
+//             background-color: $silver;
+//             width: 25px;
+//             height: 25px;
+//             border-radius: 50%;
+//         }
+//         &__name{ 
+//             color: $black; 
+//             @include h3; 
+//             // margin-right: 6rem;;
+//         }
+//         &__date{ 
+//             color: $silver; 
+//             @include h3; 
             
+//         }
+//         &__text{ 
+//             color: $black; 
+//             @include h3-comments; 
+//             margin-left: 2.2rem;
+//         }
+//     }
+// }
+
+.comments{
+    @include sidespex;
+    border-bottom: 2px solid $mercury;
+    display: flex;
+    margin-top: 1rem;
+    @media (min-width:$tablet) {
+        margin-top: 1rem;
+    }
+    
+    &__profile{ 
+        display: flex;
+    }
+    &__icon{
+        background-color: $mercury;
+        width: 9rem;
+        height: 2rem;
+        border-radius: 50%;
+        @media (min-width:$tablet) {
+            width: 5rem;
+            height: 2.5rem;
         }
-        &__text{ 
-            color: $black; 
-            @include h3-comments; 
-            margin-left: 2.2rem;
+        @media (min-width:$desktop) {
+            width: 4rem;
+            height: 2.5rem;
         }
     }
+    &__content{
+        margin-left: 0.5rem;
+    }
+
+    &__name{ 
+        color: $black; 
+        @include h3; 
+        margin-bottom: 0.75rem;
+        @media (min-width:$desktop) {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+       
+    }
+    &__date{ 
+        color: $silver; 
+        @include h3; 
+        margin: 0;
+        
+    }
+    &__text{ 
+        color: $black; 
+        @include h3-comments;
+        @media (min-width:$desktop) {
+            margin-left: 1rem;
+            margin-right: 0;
+        } 
+        
+    }
+
 }

@@ -125,3 +125,19 @@
      }
    
 }
+@mixin h4-header {
+    font-size: 12.05px;
+    line-height: 18px;
+    
+    @include bold-font; 
+
+    @media(min-width: $tablet){
+        font-size: 14px;
+        line-height: 22px;
+        }   
+     
+     @media(min-width: $desktop){
+        font-size: 14px;
+        line-height: 22px;
+        }   
+}
