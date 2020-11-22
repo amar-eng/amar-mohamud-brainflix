@@ -5,15 +5,17 @@ app.use(express.json());
 app.use(cors());
 
 
+
+app.use(express.static("files"))
+
+
+//  Middleware
+app.use(express.json()); 
 const logger = (req,res,next)=>{
     console.log(`${req.protocol}://${req.get('host')} ${req.originalUrl}`); 
     next(); 
 }
 app.use(logger);
-app.use(express.static("files"))
-
-//  Middleware
-app.use(express.json()); 
 
 
 // Videos Route

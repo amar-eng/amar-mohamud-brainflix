@@ -1,19 +1,30 @@
 const express = require('express')
 const uuid = require('uuid')
-const router = express.Router()
-const videos = require('../data/Data'); 
-// import {pic} from '../files/upload.jpg'
+const router = express.Router() 
+const fs = require('fs'); 
+
+
+function readData(){
+    const file = fs.readFileSync('./data/Data.json')
+    return JSON.parse(file)
+}
+
 // Get all videos 
 router.get('/', (req,res)=>{
-    res.json(videos); 
+   
+    res.json(readData()); 
 }) 
 
 // get single video 
 
+
 router.get('/:id', (req, res)=>{
-    const found = videos.some(video => video.id === req.params.id); 
+    
+    const videodata = readData()
+
+    const found = videodata.some(video => video.id === req.params.id); 
 if (found){
-    res.status(200).json(videos.filter(video =>video.id === req.params.id));
+    res.status(200).json(videodata.filter(video =>video.id === req.params.id));
 } else{
     res.status(400).json({message:`The Video with id of ${req.params.id} does not exist`})
 }
@@ -23,6 +34,9 @@ if (found){
 // Create a video 
 
 router.post ('/', (req,res)=>{
+
+   
+
     const newVideo = { 
         id: uuid.v4(), 
         title: req.body.title,
@@ -30,7 +44,7 @@ router.post ('/', (req,res)=>{
         description: req.body.description, 
         image: "http://localhost:8080/upload.jpg", 
         timestamp: new Date().getTime(), 
-        views:"0", 
+        views:0, 
         likes:0, 
         duration:'7:09',
         video: "https://project-2-api.herokuapp.com/stream",
@@ -41,8 +55,11 @@ router.post ('/', (req,res)=>{
         res.status(400).json ({message: `Please include both the title and description`})
     }
 
-    videos.push(newVideo); 
-    res.json(videos); 
+    const videolist= readData()
+    videolist.push(newVideo); 
+    fs.writeFileSync('./data/Data.json', JSON.stringify(videolist))
+
+    res.json(newVideo); 
 })
 
 
