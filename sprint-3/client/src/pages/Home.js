@@ -1,5 +1,5 @@
 import React, { Component } from 'react'; 
-import {API_URL, API_Key} from '../utils/Data';
+// import {API_URL, API_Key} from '../utils/Data';
 import axios from "axios";
 import Main from '../Components/main/Main'
 import './Home.scss'
@@ -15,8 +15,7 @@ import './Home.scss'
         }
 
     componentDidMount(){
-  
-    
+
         axios.get("http://localhost:8080/videos")
             .then((videoListitems)=>{
                 console.log(videoListitems.data)
@@ -24,28 +23,27 @@ import './Home.scss'
             const newList = videoListitems.data.filter (currvideo => {
                  return currvideo.id !== mainVidId}) 
                  console.log (newList)   
-                this.setState({
-                    videoListitems: newList
-                    
-                })
-                return (videoListitems.data[0].id)
-                
-            })
-            .then(mainVidId =>{
                 axios.get(`http://localhost:8080/videos/${mainVidId}`)
                 .then (mainVideo =>{
                     console.log('main video data', mainVideo.data)
                     this.setState({
+                        videoListitems:newList,
                         mainContent: mainVideo.data
+
                     })
                 })
-            
+                
+            })
+           
 
-            })  
+ 
         
     }
 
+
+
     componentDidUpdate(prevprops){ 
+   
         let currId  = this.props.match.params.id
         // if statement to render to bmx page if(!currid){ currId === this.state.videolistitems.data[0].id}
         console.log (currId)
@@ -64,24 +62,20 @@ import './Home.scss'
                 this.setState({
                     videoListitems : filteredList
                 })
-                     
-                return videoListitems; 
-            })
-
-            .then(() =>{
                 if (prevprops.match.params.id !== currId){
                     axios.get(`http://localhost:8080/videos/${currId}`)
                     .then (currentVideo =>{
                         console.log(currentVideo.data)
                         this.setState({
+                            videoListitems : filteredList,
                             mainContent: currentVideo.data
-                           
+
+                            
                         })
                     })
                 }
-            })  
-         }  
-       
+            })
+        }    
     }
 
    
@@ -95,7 +89,7 @@ import './Home.scss'
            
                 <div className = "home-content">
                    
-                    <Main  mainstuff= {this.state.mainContent} videoList= {this.state.videoListitems}/>
+                    <Main  mainvideoitems= {this.state.mainContent} videoList= {this.state.videoListitems}/>
                 </div>
             );
         }
