@@ -8,16 +8,16 @@
     align-items:center;
     background-color: $black;
     opacity: 80%;
-    width: 50%;
+    width: 47%;
     height: 35px;
     border-radius: 4px;
     justify-content: center;
     margin-right: 8px;
     @media (min-width:$tablet) {
-        width: 58%;
+        width: 70%;
     }
-    @media (min-width:$tablet) {
-        width: 52%;
+    @media (min-width:$desktop) {
+        width: 51%;
     }
 
 

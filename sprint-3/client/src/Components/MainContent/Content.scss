@@ -1,68 +1,126 @@
 @import '../../partials/variables';
 @import '../../partials/typography';
-.Content{ 
-    &__title{ 
-        margin: 0 1rem;
-        @include h1;
-        color:$black;
-        width: 100%;
+@import '../../partials/specs';
+// .Content{ 
+//     &__title{ 
+//         margin: 0 1rem;
+//         @include h1;
+//         color:$black;
+//         width: 100%;
 
-    }
-    &__channel {
-        @include h2;
-        color:$black;
-    }
-    &__date{ 
-        @include h3; 
-        color:$mercury;
-        @media (min-width:$tablet) {
-            margin-left: 0.5rem;
-        }
-    }
+//     }
+//     &__channel {
+//         @include h2;
+//         color:$black;
+//     }
+//     &__date{ 
+//         @include h3; 
+//         color:$mercury;
+//         @media (min-width:$tablet) {
+//             margin-left: 0.5rem;
+//         }
+//     }
 
-    &__views{
-        @include h4; 
-        color:$black;
-        margin-left: 0.5rem;
-    }
-    &__likes{
-        @include h4; 
-        color:$black;
-        margin-left: 0.5rem;
-    }
-    .Content__items{ 
-        @media (min-width:$tablet) {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
+//     &__views{
+//         @include h4; 
+//         color:$black;
+//         margin-left: 0.5rem;
+//     }
+//     &__likes{
+//         @include h4; 
+//         color:$black;
+//         margin-left: 0.5rem;
+//     }
+//     .Content__items{ 
+//         @media (min-width:$tablet) {
+//             display: flex;
+//             flex-direction: row;
+//             justify-content: space-between;
+//         }
         
+//     }
+//     .Content__items-left{ 
+//         display: flex;
+//         align-items: baseline;
+//         justify-content: space-between;
+//         margin: 0 8rem 0 1rem;   
+//     }
+//     .Content__items-right{ 
+//         display: flex; 
+//         align-items: center;
+//         margin: 0 8rem 0 1rem;;
+       
+//         .Content__views{
+//             padding-right: 0.5rem; 
+//         }
+        
+//     }
+//     hr{
+//         margin: 1rem;
+        
+//     }
+
+//     &__desc{ 
+//         @include h4;
+//         color:$black;
+//         margin: 0 1rem; 
+//     }
+    
+// }
+
+.Content{
+    @include sidespex;
+    &__title{
+        @include h1;
+        // color: $black;
     }
-    .Content__items-left{ 
+    &__items-left{
         display: flex;
         align-items: baseline;
-        justify-content: space-between;
-        margin: 0 8rem 0 1rem;   
+        padding: 1rem 0 0 0 ;
     }
-    .Content__items-right{ 
-        display: flex; 
-        align-items: center;
-        margin: 0 8rem 0 1rem;;
+    &__channel{
+        @include channel;
+        // color: $black;
+    }
+    &__date{
+        @include h3;
+        margin-left: 0.5rem;
        
-        .Content__views{
-            padding-right: 0.5rem; 
-        }
-        
-    }
-    hr{
-        margin: 1rem;
-        
     }
 
-    &__desc{ 
+    &__items-right{
+        display: flex;
+        align-items: center;
+        
+        padding: 2rem 0 1.5rem 0 ;
+        @media (min-width:$tablet) {
+            padding: 1.5rem 0;
+        }
+    }
+    &__items{
+        @media (min-width:$tablet) {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            
+        }
+    }
+    &__views{
+        @include h3; 
+        margin-right:2rem ;
+    }
+    &__likes{
+        @include h3; 
+    } 
+
+    &__desc{
         @include h4;
         color:$black;
-        margin: 0 1rem; 
+        margin: 1.5rem 0 2.5rem 0;
+        @media (min-width:$tablet) {
+            padding: 2.5rem 0 4rem 0;
+            width: 72%;
+        }
     }
-    
 }

@@ -3,17 +3,18 @@
     display: flex;
     // justify-content: space-between;
     width: 100%;
-    margin: 1rem;
+    // margin: 1rem;
     position: relative;
-    bottom: 4.5rem;
+    bottom: 3rem;
+    left:4.5%;
     @media (min-width:$tablet) {
         position: relative;
-        bottom: 5rem;
-        left: 10%;
+        bottom: 4rem;
+        left: 6.3%;
     }
     @media (min-width:$desktop) {
         position: relative;
         bottom: 5rem;
-        left: 17.75%;
+        left: 19%;
     }
 }
