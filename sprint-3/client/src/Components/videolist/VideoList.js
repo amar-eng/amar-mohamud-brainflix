@@ -16,8 +16,8 @@ function VideoList(props) {
                         <div className = "side-vids__container">
                             <img src = {item.image} alt= {item.title} className ="side-vids__image" />
                             <div className = "side-vids__content">
-                                <h3>{item.title}</h3>
-                                <h4>{item.channel}</h4>
+                                <p className= "side-vids__title">{item.title}</p>
+                                <p className= "side-vids__channel">{item.channel}</p>
                             </div>
                         </div>
                         </Link>
