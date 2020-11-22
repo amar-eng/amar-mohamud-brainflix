@@ -3,54 +3,7 @@
 @import '../../partials/specs';
 
 
-// .profile{ 
-    
 
-//     &__person{ 
-       
-//         display: flex;
-//         justify-content: space-between;
-//         border-bottom: 2px solid $mercury;
-//         img{
-//             margin: 0 1rem;
-//             width: 30px;
-//             height: 30px;
-//             border-radius: 50%;
-//         }
-//         .profile__form{
-//             display: flex;
-//             flex-direction: column;
-//             align-items: flex-start;
-//             margin-right:2rem;
-//             margin-bottom: 2rem;;
-           
-
-           
-//             textarea{
-//                 resize: none;
-//                 outline: none;
-//                 border: 2px solid $silver;
-//                 border-radius: 5px;
-//                 background-color: $offwhite;
-//                 padding: 1.5rem 1rem;
-               
-//             }
-           
-//         }
-
-
-//         button{
-//             border: 2px solid $brainflix-blue;
-//             border-radius: 5px;
-//             background-color: $brainflix-blue;
-//             color: $offwhite;
-//             padding: 1rem 4rem;
-//             align-self: flex-end;
-//         }
-
-
-//     }
-// }
 .profile{ 
     @include sidespex; 
     display: flex;
