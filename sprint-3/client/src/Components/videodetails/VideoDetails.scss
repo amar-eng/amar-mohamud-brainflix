@@ -1,7 +1,13 @@
 @import '../../partials/variables';
 @import '../../partials/typography';
+@import '../../partials/specs';
 h3{
     @include h2;
+    @include sidespex;
     color: $black; 
-    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    @media (min-width:$tablet) {
+        margin-bottom: 2rem;
+    }
+    // margin-left: 1rem;
 }

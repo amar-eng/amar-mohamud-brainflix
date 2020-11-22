@@ -1,0 +1,117 @@
+@import '../../partials/variables';
+@import '../../partials/typography';
+@import '../../partials/specs';
+
+
+// .profile{ 
+    
+
+//     &__person{ 
+       
+//         display: flex;
+//         justify-content: space-between;
+//         border-bottom: 2px solid $mercury;
+//         img{
+//             margin: 0 1rem;
+//             width: 30px;
+//             height: 30px;
+//             border-radius: 50%;
+//         }
+//         .profile__form{
+//             display: flex;
+//             flex-direction: column;
+//             align-items: flex-start;
+//             margin-right:2rem;
+//             margin-bottom: 2rem;;
+           
+
+           
+//             textarea{
+//                 resize: none;
+//                 outline: none;
+//                 border: 2px solid $silver;
+//                 border-radius: 5px;
+//                 background-color: $offwhite;
+//                 padding: 1.5rem 1rem;
+               
+//             }
+           
+//         }
+
+
+//         button{
+//             border: 2px solid $brainflix-blue;
+//             border-radius: 5px;
+//             background-color: $brainflix-blue;
+//             color: $offwhite;
+//             padding: 1rem 4rem;
+//             align-self: flex-end;
+//         }
+
+
+//     }
+// }
+.profile{ 
+    @include sidespex; 
+    display: flex;
+    align-items: flex-start;
+    
+
+    &__form{
+        @include h3;
+        color: $silver;
+        margin-left: 2rem;
+
+        @media (min-width:$tablet) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__textarea{
+        resize: none;
+        outline: none;
+        border: 2px solid $silver;
+        border-radius: 5px;
+        background-color: $offwhite;
+        padding: 0.5rem 0.5rem;
+        height: 28vh;
+        width: 100%;
+        @include h4;
+        @media (min-width:$tablet) {
+            height: 12vh;
+            width: 520px;
+        }
+    }
+    &__textarea:active, &__textarea:hover{
+        border: 2px solid $brainflix-blue;
+    }
+    button{
+        border: 2px solid $brainflix-blue;
+        border-radius: 5px;
+        background-color: $brainflix-blue;
+        color: $offwhite;
+        @include h3;
+        height: 16vh;
+        
+       
+        width: 100%;
+        @media (min-width:$tablet) {
+            width: 25%;
+            height: 12vh;
+            margin-left: 1rem;
+            
+        }
+    }
+    img{
+        // margin: 0 1rem;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        object-fit: cover;
+        @media (min-width:$tablet) {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+}
