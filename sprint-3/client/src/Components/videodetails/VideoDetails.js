@@ -1,7 +1,7 @@
 import React from 'react';
-import ContentStuff from '../MainContent/ContentStuff';
-import Convo from '../Convo/Convo'
-import Comments from '../Comments/Comments'
+import ContentStuff from '../mainContent/ContentStuff';
+import Convo from '../commentInput/Convo'
+import Comments from '../comments/Comments'
 import './VideoDetails.scss'
 function VideoDetails(props) {
     console.log("Details data", props.detailsdata)

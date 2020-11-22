@@ -1,6 +1,6 @@
 import React from 'react';
 import MainVid from '../mainvid/MainVid'; 
-import VideoDetails from '../video/VideoDetails'; 
+import VideoDetails from '../videodetails/VideoDetails'; 
 import VideoList from '../videolist/VideoList'
 function Main(props) {
     console.log("mainstuff data", props.mainvideoitems)

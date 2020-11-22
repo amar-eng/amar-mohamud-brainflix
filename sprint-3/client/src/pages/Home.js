@@ -15,6 +15,7 @@ import './Home.scss'
         }
 
     componentDidMount(){
+        // Axios request to get the list of videos and filtering out the first video
 
         axios.get("http://localhost:8080/videos")
             .then((videoListitems)=>{
@@ -22,14 +23,14 @@ import './Home.scss'
             const mainVidId = videoListitems.data[0].id; 
             const newList = videoListitems.data.filter (currvideo => {
                  return currvideo.id !== mainVidId}) 
-                 console.log (newList)   
+                 console.log (newList) 
+            //   Axios request to get a single video with using the ID 
                 axios.get(`http://localhost:8080/videos/${mainVidId}`)
                 .then (mainVideo =>{
                     console.log('main video data', mainVideo.data)
                     this.setState({
                         videoListitems:newList,
                         mainContent: mainVideo.data
-
                     })
                 })
                 
@@ -45,15 +46,17 @@ import './Home.scss'
     componentDidUpdate(prevprops){ 
    
         let currId  = this.props.match.params.id
-        // if statement to render to bmx page if(!currid){ currId === this.state.videolistitems.data[0].id}
         console.log (currId)
         console.log(prevprops.match.params.id)
+
          if (prevprops.match.params.id !== currId)
         {  
+            // if the current id doesnt exist then: 
             if (!currId) {
-            console.log("heresss",this.state.videoListitems)
+            console.log("List of videos: ",this.state.videoListitems)
             currId = this.state.videoListitems[0].id;
             }
+            // Axios request to get the updated video list 
             axios.get("http://localhost:8080/videos")
             .then((videoListitems)=> {
                 console.log (videoListitems.id)
@@ -62,6 +65,7 @@ import './Home.scss'
                 this.setState({
                     videoListitems : filteredList
                 })
+                // axios request to get the updated(current) video Details
                 if (prevprops.match.params.id !== currId){
                     axios.get(`http://localhost:8080/videos/${currId}`)
                     .then (currentVideo =>{

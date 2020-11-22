@@ -13,6 +13,13 @@
     border-radius: 4px;
     justify-content: center;
     margin-right: 8px;
+    @media (min-width:$tablet) {
+        width: 58%;
+    }
+    @media (min-width:$tablet) {
+        width: 52%;
+    }
+
 
     &__innerbar {
         width: 85%;

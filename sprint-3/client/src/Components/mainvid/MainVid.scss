@@ -11,15 +11,17 @@
 }
 .vid{ 
     width: 100%;
+    object-fit: cover;
     height: 11.4375rem;
     @media (min-width:$tablet) {
-        width: 700px;
+        width: 91.1458%;
         height: 400px;
     }
     @media (min-width:$desktop) {
-        width: 944px;
+        width: 63.75%;
         height: 540px;
     }
+   
     
 }
 .main-vid{ 
@@ -31,5 +33,6 @@
     justify-content: center;
     
 }
+
 
 

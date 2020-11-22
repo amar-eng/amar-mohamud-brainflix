@@ -3,6 +3,7 @@ const uuid = require('uuid')
 const router = express.Router() 
 const fs = require('fs'); 
 
+// Reading data function for re-usability 
 
 function readData(){
     const file = fs.readFileSync('./data/Data.json')

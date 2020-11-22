@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Upload.scss';
 import thumb from '../assets/Images/Upload-video-preview.jpg';
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import axios from 'axios'; 
 
 class Upload extends Component {
