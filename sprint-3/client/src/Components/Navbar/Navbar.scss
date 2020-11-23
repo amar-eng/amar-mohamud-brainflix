@@ -16,13 +16,21 @@
     }
 
     &__pic{
+        
         width: 3rem;
         height: 3rem;
         border-radius: 50%;
         object-fit: cover;
+        // margin-left: 0.5rem;;
     }
     &__logo{
         padding-top: 1rem;
+        @media (min-width:$tablet) {
+            margin-right: 10.5625rem;
+        }
+        @media (min-width:$desktop) {
+            margin-right: 31.8125rem;
+        }
     }
     input{
         background-image: url('../../assets/Icons/SVG/Icon-search.svg');
@@ -49,19 +57,27 @@
 
     }
     button{
-        background-image: url('../../assets/Icons/PNG/Icon-upload.png');
-        background-repeat: no-repeat;
-        background-position: 30% 50%;
+        
+        
         background-color: $brainflix-blue;
         border-radius: 4px;
         border-color: transparent;
-        padding:1rem 5rem;
+        width: 215px;
+        height: 13vw;
         color:White;
         margin-right: 1.5rem;
         @media (min-width:$tablet) {
-            padding:1rem 1.5rem;
-            background-position: 10% 50%;
+            height: 3rem;
+            width: 6.25rem;
         }
+        @media (min-width:$desktop) {
+            height: 3rem;
+            width: 6.25rem;
+        }
+
+    }
+    button::before{
+        content: url(../../assets/Icons/SVG/Icon-upload.svg);
     }
     
  }
