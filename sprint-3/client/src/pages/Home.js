@@ -15,7 +15,8 @@ import './Home.scss'
         }
 
     componentDidMount(){
-        // Axios request to get the list of videos and filtering out the first video
+        // Axios request to get the list of videos and filtering out the 1st video
+        
 
         axios.get("http://localhost:8080/videos")
             .then((videoListitems)=>{
