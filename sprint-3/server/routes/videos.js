@@ -60,8 +60,10 @@ router.post ('/', (req,res)=>{
     videolist.push(newVideo); 
     fs.writeFileSync('./data/Data.json', JSON.stringify(videolist))
 
-    res.json(newVideo); 
+    res.status(201).json(newVideo); 
 })
+
+
 
 
 module.exports = router; 

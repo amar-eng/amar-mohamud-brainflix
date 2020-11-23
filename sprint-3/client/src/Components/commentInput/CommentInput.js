@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import './CommentInput.scss';
 import Image from '../../assets/Images/Mohan-muruge.jpg'
-import axios from 'axios'; 
+// import axios from 'axios'; 
 class CommentInput extends Component {
     constructor(props){
         super(props)
@@ -11,20 +11,30 @@ class CommentInput extends Component {
             comment:''
         }
     }
+
+    getId=()=>{
+        return this.props.match.params.id
+    }
+
     changeHandler =(e) =>{
         this.setState({[e.target.name]: e.target.value})
     }
     clickedHandler = (e)=>{
+        const inputField = document.getElementById('textArea')
           e.preventDefault(); 
-          console.log(this.state); 
-          axios
-            .post('http://localhost:8080/videos/', this.state)
-            .then(response =>{
-                console.log(response)
-            })
-            .catch(error =>{
-                console.log(error)  
-            })
+        //   let currId = this.getId()
+         
+
+        //   console.log(this.state); 
+        //   axios
+        //     .post(`http://localhost:8080/videos/${currId}`, this.state)
+        //     .then(response =>{
+        //         console.log(response)
+        //     })
+        //     .catch(error =>{
+        //         console.log(error)  
+        //     })
+        inputField.reset()
     }
 
 
