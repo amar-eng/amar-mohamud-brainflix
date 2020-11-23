@@ -9,5 +9,11 @@ h3{
     @media (min-width:$tablet) {
         margin-bottom: 2rem;
     }
-    // margin-left: 1rem;
+}
+.details{ 
+    @media (min-width:$desktop) {
+        margin-right:0 ;
+        border-right: 2px solid $mercury;
+    }
+    
 }

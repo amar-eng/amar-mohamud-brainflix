@@ -34,10 +34,16 @@
         margin-bottom: 1rem;
         @include h4;
         @media (min-width:$tablet) {
-            height: 12vh;
+            height: 3vw;
             width: 520px;
             margin-bottom: 0; 
         }
+        @media (min-width:$desktop) {
+            height: 3vw;
+            width: 520px;
+            margin-bottom: 0; 
+        }
+
     }
     &__textarea:active, &__textarea:hover{
         border: 2px solid $brainflix-blue;
@@ -54,7 +60,7 @@
         width: 100%;
         @media (min-width:$tablet) {
             width: 25%;
-            height: 12vh;
+            height: 3vw;
             margin-left: 1rem;
             
         }

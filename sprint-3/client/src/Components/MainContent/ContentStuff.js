@@ -23,7 +23,7 @@ function ContentStuff(props) {
                         
                 </div>
             </div>
-            <hr />
+            
             
               
             

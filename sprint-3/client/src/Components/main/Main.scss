@@ -1,15 +1,16 @@
 @import '../../partials/variables';
 @import '../../partials/typography';
 
-.side-vids{
-    display: flex;
-    margin: 1rem;
-    &__image{
-        max-width: 100px;
-        border-radius: 5px;
+.section{ 
+    @media (min-width:$desktop) {
+        display: flex;
+        
     }
-    &__content{ 
-        @include h3; 
-        margin-left: 1rem;
+    &__left{
+        @media (min-width:$desktop) {
+            margin: 0;
+            border-right: 2px solid $mercury;
+            // padding-right: 1rem;
+        }
     }
 }
