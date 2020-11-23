@@ -14,11 +14,11 @@ function ContentStuff(props) {
                 </div>
                 <div className = "Content__items-right">
                     
-                        <img src = {Views} className = "Content__icon"/>
+                        <img src = {Views} className = "Content__icon" alt = "view icon "/>
                         <h3 className ="Content__views"> {props.views}</h3>
                     
                     
-                        <img src = {Likes} className = "Content__icon"/>
+                        <img src = {Likes} className = "Content__icon" alt = "like icon "/>
                         <h3 className ="Content__likes"> {props.likes}</h3>
                         
                 </div>

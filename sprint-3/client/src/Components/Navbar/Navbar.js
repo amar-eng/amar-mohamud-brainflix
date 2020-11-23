@@ -2,8 +2,7 @@ import React from 'react';
 import './Navbar.scss';
 import Logo from '../../assets/Logo/Logo-brainflix.svg';
 import Pic from "../../assets/Images/Mohan-muruge.jpg";
-import {Link} from 'react-router-dom';
-import Plus from '../../assets/Icons/SVG/Icon-upload.svg' 
+import {Link} from 'react-router-dom'; 
 function Navbar(props) {
     return (
         <div className ="navbar">

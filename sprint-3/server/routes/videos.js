@@ -64,6 +64,24 @@ router.post ('/', (req,res)=>{
 })
 
 
+router.post('/:id', (req,res) =>{
+    const newComment = { 
+        name: "Amar Mohamud",
+        id: uuid.v4(),
+        timestamp:new Date().getTime(),
+        comment: req.body.comment
+    }
+    const videolist= readData()
+    const videoIndex = videolist.findIndex((item)=>{
+        return item.id===req.params.id
+    })
+
+    const comments = videolist[videoIndex].comments; 
+    comments.push(newComment)
+    fs.writeFileSync('./data/Data.json', JSON.stringify(videolist))
+
+    res.status(201).json(newVideo);
+})
 
 
 module.exports = router; 

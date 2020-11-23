@@ -12,15 +12,15 @@ class CommentInput extends Component {
         }
     }
 
-    getId=()=>{
-        return this.props.match.params.id
-    }
+    // getId=()=>{
+    //     return this.props.match.params.id
+    // }
 
     changeHandler =(e) =>{
         this.setState({[e.target.name]: e.target.value})
     }
     clickedHandler = (e)=>{
-        const inputField = document.getElementById('textArea')
+        // const inputField = document.getElementById('textArea')
           e.preventDefault(); 
         //   let currId = this.getId()
          
@@ -34,7 +34,7 @@ class CommentInput extends Component {
         //     .catch(error =>{
         //         console.log(error)  
         //     })
-        inputField.reset()
+        // inputField.reset()
     }
 
 

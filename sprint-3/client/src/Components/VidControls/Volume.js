@@ -6,8 +6,8 @@ import './Volume.scss';
 function Volume(props) {
     return (
         <div className ="vid-controls-rhs">
-            <img className = 'fullsize-icon' src={Fullsize}  />
-            <img className = 'volume-icon' src={Volumebutton} />   
+            <img className = 'fullsize-icon' src={Fullsize}  alt = "full-size icon "/>
+            <img className = 'volume-icon' src={Volumebutton} alt = "volume icon " />   
         </div>
     );
 }
